@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import Sidebar from './components/SideNav';
 import AppRoutes from './routes';
@@ -13,7 +12,7 @@ function App() {
         {/* <Sidebar/> */}
         <div className="flex">
           <Sidebar/>
-          <div className="container mx-auto mt-12 ">
+          <div className="container mx-auto mt-12">
             <AppRoutes/>
           </div>
         </div>

@@ -1,8 +1,4 @@
-import { useState } from "react";
-
 export default function Portfolio() {
-    const [open, setOpen] = useState(false);
-    console.log("here portfolio")
     return (
         <div className="flex">
             <div className="container mx-auto mt-12 ">

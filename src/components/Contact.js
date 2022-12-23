@@ -1,8 +1,4 @@
-import { useState } from "react";
-
 export default function Contact() {
-    const [open, setOpen] = useState(false);
-    console.log("here contact")
     return (
         <div className="flex">
             <div className="container mx-auto mt-12 ">

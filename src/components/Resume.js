@@ -1,9 +1,4 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { useState } from "react";
-import mjImage from "../assets/PXL_20220817_070738868.PORTRAIT_2_square.jpg"
-
 export default function Resume() {
-    const [open, setOpen] = useState(false);
     return (
         <div className="flex">
             <div className="container mx-auto mt-12 ">
