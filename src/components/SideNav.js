@@ -9,7 +9,7 @@ export default function Sidebar() {
             // className={`h-screen sticky top-0 ${
             //     open ? "w-40" : "w-96 "
             // } flex flex-col h-screen p-3 bg-gray-800 shadow duration-300`}
-            className={`h-screen overflow-y-scroll sticky top-0 max-w-[280px] min-w-[280px] flex flex-col p-5 bg-gray-800 shadow duration-300 scrollbar-thumb-gray-900 scrollbar-thumb-rounded-full scrollbar-thin`}
+            className={`h-screen overflow-y-scroll sticky top-0 max-w-[280px] min-w-[280px] flex flex-col p-5 bg-[#1e2a3a] shadow duration-300 scrollbar-thumb-gray-900 scrollbar-thumb-rounded-full scrollbar-thin`}
         >
             <div className="space-y-3 text-center  text-white">
                 {/* <div className="flex items-center justify-between">
@@ -53,7 +53,7 @@ export default function Sidebar() {
                         </ul>
                     </div>
                 </div>
-                <hr/>
+                <hr className='my-4 h-px border-0 dark:bg-slate-700'/>
 
                 {/* <div className="relative">
                     <span className="absolute inset-y-0 left-0 flex items-center py-4">
@@ -213,7 +213,7 @@ export default function Sidebar() {
                     </button>
 
                 </div>
-                <hr/>
+                <hr className='my-4 h-px border-0 dark:bg-slate-700'/>
                 <div>
                     <p>Some Theme settings</p>
                 </div>
