@@ -14,25 +14,25 @@ export default function AboutMe() {
                     </p>
                     <div className="space-x-2">
                         <button className="bg-fe bg-blue-500 hover:bg-grey text-white font-bold py-2 px-4 rounded inline-flex items-center space-x-1">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
                             <span>View Portfolio</span>
                         </button>
                         <button className="bg-fe bg-gray-700 hover:bg-grey text-white font-bold py-2 px-4 rounded inline-flex items-center space-x-1">
-                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+                            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
                             <span>View Resume</span>
                         </button>
                     </div>
                 </div>
                 <div className="flex justify-center">
-                    <img src={MyImage} alt="" className="p-1 max-w-sm"/>
+                    <img src={MyImage} alt="" className="p-1 max-w-sm rounded-2xl"/>
                 </div>
             </div>
-            <hr class="my-4 h-px bg-gray-200 border-0 dark:bg-slate-700"/>
+            <hr className="my-4 h-px bg-gray-200 border-0 dark:bg-slate-700"/>
 
             {/* What I Do */}
             <div className="space-y-9">
                 <div className="space-y-3">
-                    <h2 className="font-bold text-3xl text-white">What I Do</h2>
+                    <h2 className="font-bold text-3xl text-white">What I Do.</h2>
                     <p>
                         I have more than 20 years' experience building software for clients all over the world.
                         Below is a quick overview of my main technical skill sets and technologies I use. 
@@ -110,13 +110,13 @@ export default function AboutMe() {
                 </div>
                 <div className="flex justify-center">
                     <button className="bg-fe bg-blue-500 hover:bg-grey text-white font-bold py-2 px-4 rounded inline-flex items-center space-x-1">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
                             <span>View Portfolio</span>
                     </button>
                 </div>
             </div>
 
-            <hr class="my-4 h-px bg-gray-200 border-0 dark:bg-slate-700"/>
+            <hr className="my-4 h-px bg-gray-200 border-0 dark:bg-slate-700"/>
 
             {/*  Featured Projects */}
             <div className="space-y-9">
@@ -199,13 +199,10 @@ export default function AboutMe() {
                 </div>
                 <div className="flex justify-center">
                     <button className="bg-fe bg-blue-500 hover:bg-grey text-white font-bold py-2 px-4 rounded inline-flex items-center space-x-1">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
                             <span>View Portfolio</span>
                     </button>
                 </div>
-            </div>
-            <div className="flex justify-center mt-20 mb-7 text-gray-400">
-                <p><small>&copy;{new Date().getFullYear()} <a href="https://www.github.com/MugiranezaJ" className="font-bold text-blue-900 hover:underline">MugiranezaJ</a> || Design inspired by <a href="https://www.kbly.com.tw/" target={"_blank"} className="font-bold text-blue-900 hover:underline">kbly</a></small></p>
             </div>
         </div>
     );

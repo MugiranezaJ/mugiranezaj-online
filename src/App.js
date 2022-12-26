@@ -9,14 +9,15 @@ function App() {
   const history = createBrowserHistory()
   return (
     <BrowserRouter history={history}>
-        {/* <Sidebar/> */}
         <div className="flex bg-[#111821] text-gray-400">
           <Sidebar/>
           <div className="container mx-auto mt-12">
             <AppRoutes/>
+            <div className="flex justify-center mt-20 mb-7 text-gray-400">
+                <p><small>&copy;{new Date().getFullYear()} <a href="https://www.github.com/MugiranezaJ" target={"_blank"} rel="noreferrer" className="font-bold text-blue-900 hover:underline">MugiranezaJ</a> || Design inspired by <a href="https://www.kbly.com.tw/" target={"_blank"} rel="noreferrer" className="font-bold text-blue-900 hover:underline">kbly</a></small></p>
+            </div>
           </div>
         </div>
-        
     </BrowserRouter>
   );
 }
