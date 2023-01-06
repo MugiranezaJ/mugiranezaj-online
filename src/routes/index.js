@@ -13,6 +13,10 @@ export default function AppRoutes({authenticated, setAuthenticated}){
         <Routes>
             <Route 
                 exact
+                path='/'
+                element={<AboutMe/>} />
+            <Route 
+                exact
                 path='/about-me'
                 element={<AboutMe/>} />
             <Route

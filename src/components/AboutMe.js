@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import MyImage from "../assets/MyImage-wide.jpg"
 
 export default function AboutMe() {
@@ -13,14 +14,22 @@ export default function AboutMe() {
                         how I may help your project? Check out my project portfolio and online resume.
                     </p>
                     <div className="space-x-2">
-                        <button className="bg-fe bg-blue-500 hover:bg-grey text-white font-bold py-2 px-4 rounded inline-flex items-center space-x-1">
-                        <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                            <span>View Portfolio</span>
-                        </button>
-                        <button className="bg-fe bg-gray-700 hover:bg-grey text-white font-bold py-2 px-4 rounded inline-flex items-center space-x-1">
-                            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
-                            <span>View Resume</span>
-                        </button>
+                        <NavLink
+                            exact={"true"}
+                            to="/portfolio">
+                            <button className="bg-fe bg-blue-500 hover:bg-grey text-white font-bold py-2 px-4 rounded inline-flex items-center space-x-1">
+                            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                <span>View Portfolio</span>
+                            </button>
+                        </NavLink>
+                        <NavLink
+                                exact={"true"}
+                                to="/resume">
+                            <button className="bg-fe bg-gray-700 hover:bg-grey text-white font-bold py-2 px-4 rounded inline-flex items-center space-x-1">
+                                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+                                <span>View Resume</span>
+                            </button>
+                        </NavLink>
                     </div>
                 </div>
                 <div className="flex justify-center">
@@ -109,10 +118,15 @@ export default function AboutMe() {
                     </div>
                 </div>
                 <div className="flex justify-center">
-                    <button className="bg-fe bg-blue-500 hover:bg-grey text-white font-bold py-2 px-4 rounded inline-flex items-center space-x-1">
-                        <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                            <span>View Portfolio</span>
-                    </button>
+                    <NavLink
+                        exact={"true"}
+                        to="/resume"
+                        className="flex items-center p-2 space-x-3 rounded-md">
+                        <button className="bg-fe bg-blue-500 hover:bg-grey text-white font-bold py-2 px-4 rounded inline-flex items-center space-x-1">
+                            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                <span>View Portfolio</span>
+                        </button>
+                    </NavLink>
                 </div>
             </div>
 
@@ -124,9 +138,9 @@ export default function AboutMe() {
                     <h2 className="font-bold text-3xl text-white">Featured Projects</h2>
                 </div>
                 <div className="grid grid-cols-1 gap-6 gap-y-10 mb-6 lg:grid-cols-2 w-full">
-                    <div className=" lg:flex justify-evenly bg-slate-800 md:flex-1">
+                    <div className=" lg:flex justify-evenly bg-slate-800 md:flex-1 rounded-2xl">
                         <div>
-                            <img className="max-w-[200px] h-full" src={MyImage} alt=""/>
+                            <img className="max-w-[200px] h-full rounded-l-2xl" src={MyImage} alt=""/>
                         </div>
                         <div className=" py-4 px-8 space-y-1 text-white">
                             <h5 className="font-bold underline text-xl">
@@ -142,9 +156,9 @@ export default function AboutMe() {
                             </p>
                         </div>
                     </div>
-                    <div className="flex justify-evenly bg-slate-800">
+                    <div className="lg:flex justify-evenly bg-slate-800 md:flex-1 rounded-2xl">
                         <div>
-                            <img className="max-w-[200px] h-full" src={MyImage} alt=""/>
+                            <img className="max-w-[200px] h-full rounded-l-2xl" src={MyImage} alt=""/>
                         </div>
                         <div className=" py-4 px-8 space-y-1 text-white">
                             <h5 className="font-bold underline text-xl">
@@ -160,9 +174,9 @@ export default function AboutMe() {
                             </p>
                         </div>
                     </div>
-                    <div className="flex justify-evenly bg-slate-800">
+                    <div className="lg:flex justify-evenly bg-slate-800 md:flex-1 rounded-2xl">
                         <div>
-                            <img className="max-w-[200px] h-full" src={MyImage} alt=""/>
+                            <img className="max-w-[200px] h-full rounded-l-2xl" src={MyImage} alt=""/>
                         </div>
                         <div className=" py-4 px-8 space-y-1 text-white">
                             <h5 className="font-bold underline text-xl">
@@ -178,9 +192,9 @@ export default function AboutMe() {
                             </p>
                         </div>
                     </div>
-                    <div className="flex justify-evenly bg-slate-800">
+                    <div className="lg:flex justify-evenly bg-slate-800 md:flex-1 rounded-2xl">
                         <div>
-                            <img className="max-w-[200px] h-full" src={MyImage} alt=""/>
+                            <img className="max-w-[200px] h-full rounded-l-2xl" src={MyImage} alt=""/>
                         </div>
                         <div className=" py-4 px-8 space-y-1 text-white">
                             <h5 className="font-bold underline text-xl">
@@ -198,10 +212,15 @@ export default function AboutMe() {
                     </div>
                 </div>
                 <div className="flex justify-center">
-                    <button className="bg-fe bg-blue-500 hover:bg-grey text-white font-bold py-2 px-4 rounded inline-flex items-center space-x-1">
-                        <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                            <span>View Portfolio</span>
-                    </button>
+                    <NavLink
+                        exact={"true"}
+                        to="/resume"
+                        className="flex items-center p-2 space-x-3 rounded-md">
+                        <button className="bg-fe bg-blue-500 hover:bg-grey text-white font-bold py-2 px-4 rounded inline-flex items-center space-x-1">
+                            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                <span>View Portfolio</span>
+                        </button>
+                    </NavLink>
                 </div>
             </div>
         </div>
