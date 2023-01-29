@@ -9,7 +9,7 @@ export default function Sidebar() {
             // className={`h-screen sticky top-0 ${
             //     open ? "w-40" : "w-96 "
             // } flex flex-col h-screen p-3 bg-gray-800 shadow duration-300`}
-            className={`h-screen overflow-y-scroll sticky top-0 max-w-[280px] min-w-[280px] flex flex-col p-5 bg-[#1e2a3a] shadow duration-300 scrollbar-thumb-gray-900 scrollbar-thumb-rounded-full scrollbar-thin`}
+            className={`hidden h-screen overflow-y-scroll sticky top-0 max-w-[280px] min-w-[280px] md:flex flex-col p-5 bg-[#1e2a3a] shadow duration-300 scrollbar-thumb-gray-900 scrollbar-thumb-rounded-full scrollbar-thin`}
         >
             <div className="space-y-3 text-center  text-white">
                 {/* <div className="flex items-center justify-between">
