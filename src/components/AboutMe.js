@@ -138,7 +138,7 @@ export default function AboutMe() {
                     <h2 className="font-bold text-3xl text-white">Featured Projects</h2>
                 </div>
                 <div className="grid grid-cols-1 gap-6 gap-y-10 mb-6 lg:grid-cols-2 w-full">
-                    <div className=" lg:flex justify-evenly bg-slate-800 md:flex-1 rounded-2xl">
+                    <div className="flex justify-evenly bg-slate-800 md:flex-1 rounded-2xl">
                         <div>
                             <img className="max-w-[200px] h-full rounded-l-2xl" src={MyImage} alt=""/>
                         </div>
@@ -156,7 +156,7 @@ export default function AboutMe() {
                             </p>
                         </div>
                     </div>
-                    <div className="lg:flex justify-evenly bg-slate-800 md:flex-1 rounded-2xl">
+                    <div className="flex justify-evenly bg-slate-800 md:flex-1 rounded-2xl">
                         <div>
                             <img className="max-w-[200px] h-full rounded-l-2xl" src={MyImage} alt=""/>
                         </div>
@@ -174,7 +174,7 @@ export default function AboutMe() {
                             </p>
                         </div>
                     </div>
-                    <div className="lg:flex justify-evenly bg-slate-800 md:flex-1 rounded-2xl">
+                    <div className="flex justify-evenly bg-slate-800 md:flex-1 rounded-2xl">
                         <div>
                             <img className="max-w-[200px] h-full rounded-l-2xl" src={MyImage} alt=""/>
                         </div>
@@ -192,7 +192,7 @@ export default function AboutMe() {
                             </p>
                         </div>
                     </div>
-                    <div className="lg:flex justify-evenly bg-slate-800 md:flex-1 rounded-2xl">
+                    <div className="flex justify-evenly bg-slate-800 md:flex-1 rounded-2xl">
                         <div>
                             <img className="max-w-[200px] h-full rounded-l-2xl" src={MyImage} alt=""/>
                         </div>
