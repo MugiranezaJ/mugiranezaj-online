@@ -10,11 +10,11 @@ export default function Resume() {
         content: () => resumeRef.current,
     });
     return (
-        <div className="flex-1 lg:max-w-[1320px] sm:max-w-[540px] md:max-w-[720px] mx-auto">
+        <div className="flex-1 lg:max-w-[1320px] md:max-w-[720px] mx-auto">
              <div className="flex-1 w-full mb-12">
                 <div className=" space-y-3 text-center">
                     <h2 className="font-bold text-4xl text-white">Online Resume</h2>
-                    <div className="space-x-2">
+                    <div className="space-y-4 space-x-2">
                         <NavLink
                             exact={"true"}
                             to="/portfolio">
