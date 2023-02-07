@@ -1,15 +1,19 @@
-// import { useState } from "react";
+import { useState } from "react";
 import { NavLink } from 'react-router-dom'
 import mjImage from "../assets/PXL_20220817_070738868.PORTRAIT_2_square.jpg"
+import BurgerButton from './BurgerButton';
 
 export default function Sidebar() {
     // const [open, setOpen] = useState(false);
+    const [isOpen, setIsOpen] = useState(false);
     return (
+        <div className='flex flex-row-reverse'>
+            <BurgerButton isOpen={isOpen} setIsOpen={setIsOpen}/>
         <div
             // className={`h-screen sticky top-0 ${
             //     open ? "w-40" : "w-96 "
             // } flex flex-col h-screen p-3 bg-gray-800 shadow duration-300`}
-            className={`hidden h-screen overflow-y-scroll sticky top-0 max-w-[280px] min-w-[280px] md:flex flex-col p-5 bg-[#1e2a3a] shadow duration-300 scrollbar-thumb-gray-900 scrollbar-thumb-rounded-full scrollbar-thin`}
+            className={`${isOpen ? 'fixed left-0 top-0 bottom-0 z-10 w-full' :'hidden sticky'} h-screen overflow-y-scroll transition ease transform top-0 md:max-w-[280px] md:min-w-[280px] md:flex flex-col p-5 bg-[#1e2a3a] shadow duration-300 scrollbar-thumb-gray-900 scrollbar-thumb-rounded-full scrollbar-thin`}
         >
             <div className="space-y-3 text-center  text-white">
                 {/* <div className="flex items-center justify-between">
@@ -89,6 +93,7 @@ export default function Sidebar() {
                         <div className="rounded-sm max">
                             <NavLink
                                 exact={"true"}
+                                onClick={() => setIsOpen(false)}
                                 to="/about-me"
                                 className="flex items-center p-2 space-x-3 rounded-md">
                                 <svg
@@ -111,6 +116,7 @@ export default function Sidebar() {
                         <li className="rounded-sm">
                             <NavLink
                                     exact={"true"}
+                                    onClick={() => setIsOpen(false)}
                                     to="/portfolio"
                                     className="flex items-center p-2 space-x-3 rounded-md">
                                 <svg
@@ -133,6 +139,7 @@ export default function Sidebar() {
                         <li className="rounded-sm">
                             <NavLink
                                 exact={"true"}
+                                onClick={() => setIsOpen(false)}
                                 to="/resume"
                                 className="flex items-center p-2 space-x-3 rounded-md">
                                 <svg
@@ -157,6 +164,7 @@ export default function Sidebar() {
                         <li className="rounded-sm">
                             <NavLink
                                 exact={"true"}
+                                onClick={() => setIsOpen(false)}
                                 to="/contact"
                                 className="flex items-center p-2 space-x-3 rounded-md">
                                     <svg
@@ -186,6 +194,7 @@ export default function Sidebar() {
                         <li className="rounded-sm">
                             <NavLink
                                     exact={"true"}
+                                    onClick={() => setIsOpen(false)}
                                     to="/settings"
                                     className="flex items-center p-2 space-x-3 rounded-md">
                                 <svg
@@ -223,6 +232,7 @@ export default function Sidebar() {
                     <p>Some Theme settings</p>
                 </div>
             </div>
+        </div>
         </div>
     );
 }

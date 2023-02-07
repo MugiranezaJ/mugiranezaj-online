@@ -33,7 +33,7 @@ export default function AboutMe() {
                     </div>
                 </div>
                 <div className="flex justify-center">
-                    <img src={MyImage} alt="" className="p-1 max-w-sm rounded-2xl"/>
+                    <img src={MyImage} alt="" className="p-1 w-full max-w-sm rounded-2xl"/>
                 </div>
             </div>
             <hr className="my-4 h-px bg-gray-200 border-0 dark:bg-slate-700"/>
@@ -138,15 +138,15 @@ export default function AboutMe() {
                     <h2 className="font-bold text-3xl text-white">Featured Projects</h2>
                 </div>
                 <div className="grid grid-cols-1 gap-6 gap-y-10 mb-6 lg:grid-cols-2 w-full">
-                    <div className="flex justify-evenly bg-slate-800 md:flex-1 rounded-2xl">
+                    <div className="flex md:justify-evenly bg-slate-800 rounded-2xl">
                         <div>
-                            <img className="max-w-[200px] h-full rounded-l-2xl" src={MyImage} alt=""/>
+                            <img className="h-full max-w-[200px] rounded-l-2xl" src={MyImage} alt=""/>
                         </div>
-                        <div className=" py-4 px-8 space-y-1 text-white">
+                        <div className=" py-4 px-3 md:px-8 space-y-1 text-white">
                             <h5 className="font-bold underline text-xl">
                                 <a href="/#" alt="">Project Heading</a>
                             </h5>
-                            <p className="text-sm">
+                            <p className="text-sm line-clamp-4">
                                 Project intro lorem ipsum dolor sit amet, 
                                 consectetuer adipiscing elit. Cum sociis natoque
                                 penatibus et magnis dis parturient montes.
@@ -156,15 +156,15 @@ export default function AboutMe() {
                             </p>
                         </div>
                     </div>
-                    <div className="flex justify-evenly bg-slate-800 md:flex-1 rounded-2xl">
+                    <div className="flex md:justify-evenly bg-slate-800 rounded-2xl">
                         <div>
-                            <img className="max-w-[200px] h-full rounded-l-2xl" src={MyImage} alt=""/>
+                            <img className="h-full max-w-[200px] rounded-l-2xl" src={MyImage} alt=""/>
                         </div>
-                        <div className=" py-4 px-8 space-y-1 text-white">
+                        <div className=" py-4 px-3 md:px-8 space-y-1 text-white">
                             <h5 className="font-bold underline text-xl">
                                 <a href="/#" alt="">Project Heading</a>
                             </h5>
-                            <p className="text-sm">
+                            <p className="text-sm line-clamp-4">
                                 Project intro lorem ipsum dolor sit amet, 
                                 consectetuer adipiscing elit. Cum sociis natoque
                                 penatibus et magnis dis parturient montes.
@@ -174,15 +174,15 @@ export default function AboutMe() {
                             </p>
                         </div>
                     </div>
-                    <div className="flex justify-evenly bg-slate-800 md:flex-1 rounded-2xl">
+                    <div className="flex md:justify-evenly bg-slate-800 rounded-2xl">
                         <div>
-                            <img className="max-w-[200px] h-full rounded-l-2xl" src={MyImage} alt=""/>
+                            <img className="h-full max-w-[200px] rounded-l-2xl" src={MyImage} alt=""/>
                         </div>
-                        <div className=" py-4 px-8 space-y-1 text-white">
+                        <div className=" py-4 px-3 md:px-8 space-y-1 text-white">
                             <h5 className="font-bold underline text-xl">
                                 <a href="/#" alt="">Project Heading</a>
                             </h5>
-                            <p className="text-sm">
+                            <p className="text-sm line-clamp-4">
                                 Project intro lorem ipsum dolor sit amet, 
                                 consectetuer adipiscing elit. Cum sociis natoque
                                 penatibus et magnis dis parturient montes.
@@ -192,15 +192,15 @@ export default function AboutMe() {
                             </p>
                         </div>
                     </div>
-                    <div className="flex justify-evenly bg-slate-800 md:flex-1 rounded-2xl">
+                    <div className="flex md:justify-evenly bg-slate-800 rounded-2xl">
                         <div>
-                            <img className="max-w-[200px] h-full rounded-l-2xl" src={MyImage} alt=""/>
+                            <img className="h-full max-w-[200px] rounded-l-2xl" src={MyImage} alt=""/>
                         </div>
-                        <div className=" py-4 px-8 space-y-1 text-white">
+                        <div className=" py-4 px-3 md:px-8 space-y-1 text-white">
                             <h5 className="font-bold underline text-xl">
                                 <a href="/#" alt="">Project Heading</a>
                             </h5>
-                            <p className="text-sm">
+                            <p className="text-sm line-clamp-4">
                                 Project intro lorem ipsum dolor sit amet, 
                                 consectetuer adipiscing elit. Cum sociis natoque
                                 penatibus et magnis dis parturient montes.
