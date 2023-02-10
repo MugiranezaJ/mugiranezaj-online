@@ -35,7 +35,7 @@ export default function Resume() {
 
             <hr className="my-4 h-px bg-gray-200 border-0 dark:bg-slate-700"/>
 
-            <div className="px-3 lg:px-5">
+            <div className="md:px-3 lg:px-5">
                <ResumeTemplate ref={ resumeRef }/> 
             </div>
         </div>
