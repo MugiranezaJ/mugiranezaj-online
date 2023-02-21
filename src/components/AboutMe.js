@@ -9,9 +9,9 @@ export default function AboutMe() {
                     <h2 className="font-bold text-5xl text-white">Mugiraneza Jackson</h2>
                     <p className="font-thin text-2xl">Software Engineer</p>
                     <p className="">
-                        I'm a software engineer specialised in frontend and backend development for complex 
-                        scalable web apps. I write about software development on my blog. Want to know 
-                        how I may help your project? Check out my project portfolio and online resume.
+                        I'm a full stack software engineer and mobile developer specializing in backend development. 
+                        I'm passinate about delivering innovative solutions for small to complex business challenges 
+                        and am dedicated to collaborating effectivelly with cross-functional teams.
                     </p>
                     <div className="space-x-2">
                         <NavLink
@@ -43,9 +43,10 @@ export default function AboutMe() {
                 <div className="space-y-3">
                     <h2 className="font-bold text-3xl text-white">What I Do.</h2>
                     <p>
-                        I have more than 20 years' experience building software for clients all over the world.
-                        Below is a quick overview of my main technical skill sets and technologies I use. 
-                        Want to find out more about my experience? Check out my online resume and project portfolio.
+                        I have over three years of experience building software 
+                        for clients and for me. Here are some of the main skills 
+                        and technologies I use in my work. For more, you can 
+                        also check my online resume.
                     </p>
                 </div>
                 <div className="grid grid-cols-1 gap-6 mb-6 lg:grid-cols-4 w-full">
@@ -144,15 +145,23 @@ export default function AboutMe() {
                         </div>
                         <div className=" py-4 px-3 md:px-8 space-y-1 text-white">
                             <h5 className="font-bold underline text-xl">
-                                <a href="/#" alt="">Project Heading</a>
+                                <a 
+                                    href="https://github.com/MugiranezaJ/ms-store" 
+                                    target={'_blank'} 
+                                    rel={'noreferrer'} 
+                                    alt="">
+                                        Microsoft store - Re-implementation
+                                </a>
                             </h5>
                             <p className="text-sm line-clamp-4">
-                                Project intro lorem ipsum dolor sit amet, 
-                                consectetuer adipiscing elit. Cum sociis natoque
-                                penatibus et magnis dis parturient montes.
+                                [<a href={"https://ms-store-sigma.vercel.app/"} className=" text-blue-400">visit</a>] 
+                                This is the front end re-implemetation of microsoft store 
+                                desktop app in a web version using react.
                             </p>
                             <p className=" py-4 text-gray-400">
-                                <small>Client: Google</small>
+                                <small>
+                                    Client: <a href="https://github.com/MugiranezaJ/ms-store" target={'_blank'} rel={'noreferrer'}  className=" underline">Open Source</a>
+                                </small>
                             </p>
                         </div>
                     </div>
@@ -162,15 +171,16 @@ export default function AboutMe() {
                         </div>
                         <div className=" py-4 px-3 md:px-8 space-y-1 text-white">
                             <h5 className="font-bold underline text-xl">
-                                <a href="/#" alt="">Project Heading</a>
+                                <a href="/#" alt="">Igare.rw</a>
                             </h5>
                             <p className="text-sm line-clamp-4">
-                                Project intro lorem ipsum dolor sit amet, 
-                                consectetuer adipiscing elit. Cum sociis natoque
-                                penatibus et magnis dis parturient montes.
+                                [<a href={"https://igare.rw/"} className=" text-blue-400">visit</a>]
+                                By proving legal ownership documents, this website aims at regulating the 
+                                buying and selling of bicycles all over the 
+                                country of Rwanda in a secure way.
                             </p>
                             <p className=" py-4 text-gray-400">
-                                <small>Client: Google</small>
+                                <small>Client: BSSC Ltd.</small>
                             </p>
                         </div>
                     </div>
@@ -180,15 +190,17 @@ export default function AboutMe() {
                         </div>
                         <div className=" py-4 px-3 md:px-8 space-y-1 text-white">
                             <h5 className="font-bold underline text-xl">
-                                <a href="/#" alt="">Project Heading</a>
+                                <a href="/#" alt="">Softlanding.rw</a>
                             </h5>
                             <p className="text-sm line-clamp-4">
-                                Project intro lorem ipsum dolor sit amet, 
-                                consectetuer adipiscing elit. Cum sociis natoque
-                                penatibus et magnis dis parturient montes.
+                                [<a href={"https://softlanding.rw/"} className=" text-blue-400">visit</a>]
+                                Soft Landing Rwanda is a company that 
+                                facilitates peaple in travelling and relocating  
+                                in Rwanda and Africa at large. You can see more 
+                                services through their website
                             </p>
                             <p className=" py-4 text-gray-400">
-                                <small>Client: Google</small>
+                                <small>Client: Soft Landing Rwanda</small>
                             </p>
                         </div>
                     </div>

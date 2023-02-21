@@ -1,5 +1,4 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
 import MyImage from "../assets/MyImage-wide.jpg"
 
 export const ResumeTemplate = React.forwardRef((props, ref) => {
@@ -13,11 +12,7 @@ export const ResumeTemplate = React.forwardRef((props, ref) => {
                     </div>
                     <div className="flex justify-center w-full">
                         <ul className="flex-1 pt-2 pb-4 text-sm w-[320px]">
-                            <div className="rounded-sm max">
-                                <NavLink
-                                    exact={"true"}
-                                    to="/#"
-                                    className="flex items-center space-x-2 rounded-md">
+                            <li className="flex items-center space-x-2 rounded-md">
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
                                         className="w-4 h-4"
@@ -33,13 +28,8 @@ export const ResumeTemplate = React.forwardRef((props, ref) => {
                                         />
                                     </svg>
                                     <p className="text-xs">(+250) 780712835</p>
-                                </NavLink>
-                            </div>
-                            <li className="rounded-sm">
-                                <NavLink
-                                        exact={"true"}
-                                        to="/#"
-                                        className="flex items-center space-x-2 rounded-md">
+                            </li>
+                            <li className="flex items-center space-x-2 rounded-mdrounded-sm">
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
                                         className="w-4 h-4"
@@ -54,14 +44,9 @@ export const ResumeTemplate = React.forwardRef((props, ref) => {
                                             d="M20 13V6a2 2 0 00-2-2H6a2 2 0 00-2 2v7m16 0v5a2 2 0 01-2 2H6a2 2 0 01-2-2v-5m16 0h-2.586a1 1 0 00-.707.293l-2.414 2.414a1 1 0 01-.707.293h-3.172a1 1 0 01-.707-.293l-2.414-2.414A1 1 0 006.586 13H4"
                                         />
                                     </svg>
-                                    <p className="text-xs">mugiranzaj@gmail.com</p>
-                                </NavLink>
+                                    <p className="text-xs">mugiranezaj@gmail.com</p>
                             </li>
-                            <li className="rounded-sm">
-                                <NavLink
-                                    exact={"true"}
-                                    to="/#"
-                                    className="flex items-center space-x-2 rounded-md">
+                            <li className="flex items-center space-x-2">
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
                                         className="w-4 h-4"
@@ -76,14 +61,9 @@ export const ResumeTemplate = React.forwardRef((props, ref) => {
                                             d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"
                                         />
                                     </svg>
-                                    <p  className="text-xs">mywebsite.com</p>
-                                </NavLink>
+                                    <p  className="text-xs">mugiranezaj.vercel.app</p>
                             </li>
-                            <li className="rounded-sm">
-                                <NavLink
-                                        exact={"true"}
-                                        to="/#"
-                                        className="flex items-center space-x-2 rounded-md">
+                            <li className="flex items-center space-x-2 rounded-md">
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
                                         className="w-4 h-4"
@@ -99,7 +79,6 @@ export const ResumeTemplate = React.forwardRef((props, ref) => {
                                         />
                                     </svg>
                                     <p className="text-xs">Kigali, Rwanda</p>
-                                </NavLink>
                             </li>
                         </ul>
                     </div>
@@ -114,20 +93,12 @@ export const ResumeTemplate = React.forwardRef((props, ref) => {
                     </div>
                     <div className=" flex items-center lg:col-span-4">
                         <p>
-                            Summarise your career here. You can make a PDF 
-                            version of your resume using our free Sketch 
-                            template here. Donec quam felis, ultricies nec, 
-                            pellentesque eu. Lorem ipsum dolor sit amet, 
-                            consectetuer adipiscing elit. Aenean commodo 
-                            ligula eget dolor. Aenean massa. Cum sociis 
-                            natoque penatibus et magnis dis parturient 
-                            montes, nascetur ridiculus mus. Donec quam felis
-                            , ultricies nec, pellentesque eu, pretium quis, 
-                            sem. Maecenas nec odio et ante tincidunt tempus.
-                            Donec vitae sapien ut libero venenatis 
-                            faucibus. Nullam quis ante. Etiam sit amet orci
-                            eget eros faucibus tincidunt. Duis leo. Sed 
-                            fringilla mauris sit amet nibh.
+                            Enthusiastic Software engineer eager to contribute 
+                            to individual and teams success through hard work, 
+                            attention to detail and excellent organizational 
+                            skills. Clear understanding of Programming and 
+                            coding in general. Motivated to learn, grow and 
+                            excel in Software engineering and web development. 
                         </p>
                     </div>
                 </div>
@@ -138,152 +109,129 @@ export const ResumeTemplate = React.forwardRef((props, ref) => {
                 <div className="grid lg:grid-cols-4 mb-16">
                     {/* Main Panel */}
                     <div className="col-span-3 lg:pl-3 sm:pr-12 space-y-2">
+
+                        {/* Experiance */}
                         <div className="mb-12">
                             <h2 className="font-bold text-2xl text-white uppercase tracking-widest mb-4">Work Experience</h2>
                             <div>
                                 <div className="space-y-2 mb-4">
                                     <div className="sm:flex justify-between">
-                                        <h3 className=" text-base font-bold text-neutral-300">Senior Software Engineer</h3>
-                                        <p>Google | 2019 - Present</p>
+                                        <div>
+                                            <h3 className=" text-base font-bold text-neutral-300">Backend Software Engineer</h3>
+                                            <p>Full-time</p>
+                                        </div>
+                                        <p>Bongalo Ltd | 2022 Apr - 2022 December</p>
                                     </div>
                                     <p>
-                                        Role description goes here ipsum dolor 
-                                        sit amet, consectetuer adipiscing elit. 
-                                        Aenean commodo ligula eget dolor. Aenean
-                                        massa. Cum sociis natoque penatibus et 
-                                        magnis dis parturient montes, nascetur 
-                                        ridiculus mus. Donec quam felis, 
-                                        ultricies nec, pellentesque eu, pretium 
-                                        quis, sem. Donec pede justo, fringilla 
-                                        vel. Lorem ipsum dolor sit amet, 
-                                        consectetuer adipiscing elit. Aenean 
-                                        commodo ligula eget dolor. Aenean massa. 
-                                        Cum sociis natoque penatibus et magnis 
-                                        dis parturient montes, nascetur 
-                                        ridiculus mus. Donec quam felis.
+                                        As a backend end engineer, I was tasked 
+                                        to implement new features, debug, fix 
+                                        and improve already existing ones 
+                                        and then deploy them. I would also maintain the system.
                                     </p>
+                                    <p>Tools: Pyhton | Django Rest framework(DRF) | Google Cloud Pratiform(GCP) | Firebase</p>
                                 </div>
                                 <div className="space-y-2 mb-4">
                                     <div className="sm:flex justify-between">
-                                        <h3 className=" text-base font-bold text-neutral-300">Senior Software Engineer</h3>
-                                        <p>Google | 2019 - Present</p>
+                                        <div>
+                                                <h3 className=" text-base font-bold text-neutral-300">Full Stack Developer</h3>
+                                                <p>Freelance</p>
+                                        </div>
+                                        <p>BSSC Ltd. | 2021 Nov - Mar 2022</p>
                                     </div>
                                     <p>
-                                        Role description goes here ipsum dolor 
-                                        sit amet, consectetuer adipiscing elit. 
-                                        Aenean commodo ligula eget dolor. Aenean
-                                        massa. Cum sociis natoque penatibus et 
-                                        magnis dis parturient montes, nascetur 
-                                        ridiculus mus. Donec quam felis, 
-                                        ultricies nec, pellentesque eu, pretium 
-                                        quis, sem. Donec pede justo, fringilla 
-                                        vel. Lorem ipsum dolor sit amet, 
-                                        consectetuer adipiscing elit. Aenean 
-                                        commodo ligula eget dolor. Aenean massa. 
-                                        Cum sociis natoque penatibus et magnis 
-                                        dis parturient montes, nascetur 
-                                        ridiculus mus. Donec quam felis.
+                                        I designed the UI/UX, did system 
+                                        design, built all features of frontend 
+                                        and backend and deployed the project.
                                     </p>
+                                    <p>Tools: PhpMyAdmin | Bootstrap | CSS | HTML5 | PHP | jQuery | JavaScript</p>
                                 </div>
                                 <div className="space-y-2 mb-4">
                                     <div className="sm:flex justify-between">
-                                        <h3 className=" text-base font-bold text-neutral-300">Senior Software Engineer</h3>
-                                        <p>Google | 2019 - Present</p>
+                                        <div>
+                                            <h3 className=" text-base font-bold text-neutral-300">Full Stack Developer</h3>
+                                            <p>Freelance</p>
+                                        </div>
+                                        <p>Soft Landing Rwanda. | 2021 May - Jul 2022</p>
                                     </div>
                                     <p>
-                                        Role description goes here ipsum dolor 
-                                        sit amet, consectetuer adipiscing elit. 
-                                        Aenean commodo ligula eget dolor. Aenean
-                                        massa. Cum sociis natoque penatibus et 
-                                        magnis dis parturient montes, nascetur 
-                                        ridiculus mus. Donec quam felis, 
-                                        ultricies nec, pellentesque eu, pretium 
-                                        quis, sem. Donec pede justo, fringilla 
-                                        vel. Lorem ipsum dolor sit amet, 
-                                        consectetuer adipiscing elit. Aenean 
-                                        commodo ligula eget dolor. Aenean massa. 
-                                        Cum sociis natoque penatibus et magnis 
-                                        dis parturient montes, nascetur 
-                                        ridiculus mus. Donec quam felis.
+                                        I designed the UI/UX, did system 
+                                        design, built all features of frontend 
+                                        and backend and deployed the project.
                                     </p>
+                                    <p>Tools: PhpMyAdmin | PHP | jQuery | JavaScript</p>
                                 </div>
                                 <div className="space-y-2 mb-4">
                                     <div className="sm:flex justify-between">
-                                        <h3 className=" text-base font-bold text-neutral-300">Senior Software Engineer</h3>
-                                        <p>Google | 2019 - Present</p>
+                                        <div>
+                                            <h3 className=" text-base font-bold text-neutral-300">Software Engineer Intern</h3>
+                                            <p>Full-time Internship</p>
+                                        </div>
+                                        <p>MVend Ltd. | 2019 - Present</p>
                                     </div>
                                     <p>
-                                        Role description goes here ipsum dolor 
-                                        sit amet, consectetuer adipiscing elit. 
-                                        Aenean commodo ligula eget dolor. Aenean
-                                        massa. Cum sociis natoque penatibus et 
-                                        magnis dis parturient montes, nascetur 
-                                        ridiculus mus. Donec quam felis, 
-                                        ultricies nec, pellentesque eu, pretium 
-                                        quis, sem. Donec pede justo, fringilla 
-                                        vel. Lorem ipsum dolor sit amet, 
-                                        consectetuer adipiscing elit. Aenean 
-                                        commodo ligula eget dolor. Aenean massa. 
-                                        Cum sociis natoque penatibus et magnis 
-                                        dis parturient montes, nascetur 
-                                        ridiculus mus. Donec quam felis.
+                                        As an intern, I worked on both frontend 
+                                        and backend projects that gave me hints 
+                                        on industry level skills. I also 
+                                        improved my communication skills 
+                                        though working as a team
                                     </p>
+                                    <p> Git | PostgreSQL | Apache Kafka | Node.js | React.js</p>
+                                </div>
+                                <div className="space-y-2 mb-4">
+                                    <div className="sm:flex justify-between">
+                                        <div>
+                                            <h3 className=" text-base font-bold text-neutral-300">Full Stack Developer</h3>
+                                            <p>Freelance</p>
+                                        </div>
+                                        <p>Ikuzo Tech Group. | 2021 May - Jul 2022</p>
+                                    </div>
+                                    <p>
+                                        I worked as full stack developer 
+                                        focusing mostly on backend tasks
+                                    </p>
+                                    <p>Tools: PhpMyAdmin | PHP | jQuery | Bootstrap | JavaScript</p>
                                 </div>
                             </div>
                         </div>
 
+                        {/* Projects */}
                         <div className="mb-12">
                             <h2 className="font-bold text-2xl text-white uppercase tracking-widest mb-4">Projects</h2>
                             <div>
                                 <div className="space-y-2 mb-4">
                                     <div className="flex justify-between">
-                                        <h3 className=" text-base font-bold text-neutral-300">Project Lorem Ipsum</h3>
+                                        <h3 className=" text-base font-bold text-neutral-300">Microsoft store - Re-Implementation</h3>
                                         <p>Open Source</p>
                                     </div>
                                     <p>
-                                        You can use this section for your 
-                                        side projects. You can provide a 
-                                        project link here as well. Lorem 
-                                        ipsum dolor sit amet, consectetuer 
-                                        adipiscing elit. Aenean commodo 
-                                        ligula eget dolor. Aenean massa. 
-                                        Cum sociis natoque penatibus et 
-                                        magnis dis parturient montes, 
-                                        nascetur ridiculus mus.
+                                        This is the front end re-implemetation 
+                                        of microsoft store desktop app in a web 
+                                        version using react.
                                     </p>
                                 </div>
                                 <div className="space-y-2 mb-4">
                                     <div className="flex justify-between">
-                                        <h3 className=" text-base font-bold text-neutral-300">Project Lorem Ipsum</h3>
-                                        <p>Open Source</p>
+                                        <h3 className=" text-base font-bold text-neutral-300">Igare.rw</h3>
+                                        <p>Closed Source</p>
                                     </div>
                                     <p>
-                                        You can use this section for your 
-                                        side projects. You can provide a 
-                                        project link here as well. Lorem 
-                                        ipsum dolor sit amet, consectetuer 
-                                        adipiscing elit. Aenean commodo 
-                                        ligula eget dolor. Aenean massa. 
-                                        Cum sociis natoque penatibus et 
-                                        magnis dis parturient montes, 
-                                        nascetur ridiculus mus.
+                                        By proving legal ownership documents, 
+                                        this website aims at regulating the 
+                                        buying and selling of bicycles all over 
+                                        the country of Rwanda in a secure way.
                                     </p>
                                 </div>
                                 <div className="space-y-2 mb-4">
                                     <div className="flex justify-between">
-                                        <h3 className=" text-base font-bold text-neutral-300">Project Lorem Ipsum</h3>
-                                        <p>Open Source</p>
+                                        <h3 className=" text-base font-bold text-neutral-300">Softlanding.rw</h3>
+                                        <p>closed Source</p>
                                     </div>
                                     <p>
-                                        You can use this section for your 
-                                        side projects. You can provide a 
-                                        project link here as well. Lorem 
-                                        ipsum dolor sit amet, consectetuer 
-                                        adipiscing elit. Aenean commodo 
-                                        ligula eget dolor. Aenean massa. 
-                                        Cum sociis natoque penatibus et 
-                                        magnis dis parturient montes, 
-                                        nascetur ridiculus mus.
+                                        Soft Landing Rwanda is a company that 
+                                        facilitates peaple in travelling and 
+                                        relocating in Rwanda and Africa at 
+                                        large. You can see more services 
+                                        through their website
                                     </p>
                                 </div>
                             </div>
@@ -298,7 +246,9 @@ export const ResumeTemplate = React.forwardRef((props, ref) => {
                                 <h3 className=" text-base font-bold text-white mb-1">Technical</h3>
                                 <div className="">
                                     <ul className="space-y-1">
+                                        <li>HTML/CSS/PHP</li>
                                         <li>JavaScript/React</li>
+                                        <li>React Native</li>
                                         <li>NodeJs/Python/Java</li>
                                         <li>PostgreSQL/MySQL/MongoDB</li>
                                         <li>Figma</li>
@@ -306,7 +256,7 @@ export const ResumeTemplate = React.forwardRef((props, ref) => {
                                     </ul>
                                 </div>
                             </div>
-                            <div className="">
+                            {/* <div className="">
                                 <h3 className=" text-base font-bold text-white mb-1">Professional</h3>
                                 <div className="">
                                     <ul className="space-y-1">
@@ -317,21 +267,21 @@ export const ResumeTemplate = React.forwardRef((props, ref) => {
                                         <li>Heroku/DigitalOcean/GCP</li>
                                     </ul>
                                 </div>
-                            </div>
+                            </div> */}
                         </div>
 
                         <div className="space-y-3">
                             <h2 className="font-bold text-2xl text-white uppercase tracking-widest">Education</h2>
                             <div className="space-y-3">
                                 <div className=" mb-1">
-                                    <p className=" text-stone-200">MSc in Computer Science</p>
-                                    <p>University College London</p>
-                                    <p>2010 - 2011</p>
+                                    <p className=" text-stone-200">Software Engineering and communication Skills</p>
+                                    <p>Andela Inc.</p>
+                                    <p>2020 - 2021</p>
                                 </div>
                                 <div className=" mb-1">
-                                    <p className=" text-stone-200">BSc Maths & Physics</p>
-                                    <p>University College London</p>
-                                    <p>2010 - 2011</p>
+                                    <p className=" text-stone-200">Advanced Level Diploma in Maths, Physics & Computer Science</p>
+                                    <p>ES KAnombe EFOTEC</p>
+                                    <p>2017 - 2019</p>
                                 </div>
                             </div>
                         </div>
@@ -341,13 +291,13 @@ export const ResumeTemplate = React.forwardRef((props, ref) => {
                             <h2 className="font-bold text-2xl text-white uppercase tracking-widest">Certification</h2>
                             <div className="space-y-3">
                                 <div className=" mb-1">
-                                    <p className=" text-stone-200">Award Lorem Ipsum</p>
-                                    <p>Microsoft lorem ipsum</p>
+                                    <p className=" text-stone-200">Software Engineering and communication Skills</p>
+                                    <p>Andela Inc.</p>
                                 </div>
-                                <div className=" mb-1">
+                                {/* <div className=" mb-1">
                                 <p className=" text-stone-200">Award Lorem Ipsum</p>
                                     <p>Oracle lorem ipsum</p>
-                                </div>
+                                </div> */}
                             </div>
                         </div>
 
@@ -359,7 +309,7 @@ export const ResumeTemplate = React.forwardRef((props, ref) => {
                                 <p className=" text-stone-200">Kinyarwanda <span className="text-gray-400">(Native)</span></p>
                                 </div>
                                 <div className=" mb-1">
-                                <p className=" text-stone-200">English <span className="text-gray-400">(Professional)</span></p>
+                                <p className=" text-stone-200">English <span className="text-gray-400">(Intermediate)</span></p>
                                 </div>
                             </div>
                         </div>
@@ -371,6 +321,7 @@ export const ResumeTemplate = React.forwardRef((props, ref) => {
                                 <p className=" text-stone-200">Travelling</p>
                                 <p className=" text-stone-200">Gaming</p>
                                 <p className=" text-stone-200">Photography</p>
+                                <p className=" text-stone-200">Cosmology</p>
 
                             </div>
                         </div>
@@ -384,7 +335,7 @@ export const ResumeTemplate = React.forwardRef((props, ref) => {
                         <a href="/#" alt="">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" className="w-5 h-5"><path fill="currentColor" d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"/></svg>
                         </a>
-                        <p>linkedin.com/in/username</p>
+                        <p>linkedin.com/in/mugiraneza-jackson-9a7a181b8</p>
                     </div>
                     <div className="flex space-x-1 items-center my-4">
                         <a href="/#">
@@ -396,7 +347,7 @@ export const ResumeTemplate = React.forwardRef((props, ref) => {
                         <a href="/#">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" className="w-5 h-5"><path fill="currentColor" d="M248,8C111.033,8,0,119.033,0,256S111.033,504,248,504,496,392.967,496,256,384.967,8,248,8ZM362.952,176.66c-3.732,39.215-19.881,134.378-28.1,178.3-3.476,18.584-10.322,24.816-16.948,25.425-14.4,1.326-25.338-9.517-39.287-18.661-21.827-14.308-34.158-23.215-55.346-37.177-24.485-16.135-8.612-25,5.342-39.5,3.652-3.793,67.107-61.51,68.335-66.746.153-.655.3-3.1-1.154-4.384s-3.59-.849-5.135-.5q-3.283.746-104.608,69.142-14.845,10.194-26.894,9.934c-8.855-.191-25.888-5.006-38.551-9.123-15.531-5.048-27.875-7.717-26.8-16.291q.84-6.7,18.45-13.7,108.446-47.248,144.628-62.3c68.872-28.647,83.183-33.623,92.511-33.789,2.052-.034,6.639.474,9.61,2.885a10.452,10.452,0,0,1,3.53,6.716A43.765,43.765,0,0,1,362.952,176.66Z"/></svg>
                         </a>
-                        <p>@username</p>
+                        <p>@MugiranezaJ</p>
                     </div>
                 </div>
             </div>
