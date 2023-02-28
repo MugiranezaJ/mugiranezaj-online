@@ -10,33 +10,9 @@ export default function Sidebar() {
         <div className='flex flex-row-reverse'>
             <BurgerButton isOpen={isOpen} setIsOpen={setIsOpen}/>
         <div
-            // className={`h-screen sticky top-0 ${
-            //     open ? "w-40" : "w-96 "
-            // } flex flex-col h-screen p-3 bg-gray-800 shadow duration-300`}
             className={`${isOpen ? 'fixed left-0 top-0 bottom-0 z-10 w-full' :'hidden sticky'} h-screen overflow-y-scroll transition ease transform top-0 md:max-w-[280px] md:min-w-[280px] md:flex flex-col p-5 bg-[#1e2a3a] shadow duration-300 scrollbar-thumb-gray-900 scrollbar-thumb-rounded-full scrollbar-thin`}
         >
             <div className="space-y-3 text-center  text-white">
-                {/* <div className="flex items-center justify-between">
-                    <h2 className="text-xl font-bold text-white">
-                        Dashboard
-                    </h2>
-                    <button onClick={() => setOpen(!open)}>
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            className="w-6 h-6 text-white"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            stroke="currentColor"
-                            strokeWidth={2}
-                        >
-                            <path
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                                d="M4 6h16M4 12h8m-8 6h16"
-                            />
-                        </svg>
-                    </button>
-                </div> */}
                 <div className="flex items-center justify-center flex-col space-y-6">
                     <h2 className=" text-2xl font-bold">Mugiraneza Jackson</h2>
                     <div className="mb-4">
@@ -58,36 +34,6 @@ export default function Sidebar() {
                     </div>
                 </div>
                 <hr className='my-4 h-px border-0 dark:bg-slate-700'/>
-
-                {/* <div className="relative">
-                    <span className="absolute inset-y-0 left-0 flex items-center py-4">
-                        <button
-                            type="submit"
-                            className="p-2 focus:outline-none focus:ring"
-                        >
-                            <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                className="w-6 h-6"
-                                fill="none"
-                                viewBox="0 0 24 24"
-                                stroke="currentColor"
-                                strokeWidth={2}
-                            >
-                                <path
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-                                />
-                            </svg>
-                        </button>
-                    </span>
-                    <input
-                        type="search"
-                        name="Search"
-                        placeholder="Search..."
-                        className="w-full py-2 pl-10 text-sm rounded-md focus:outline-none"
-                    />
-                </div> */}
                 <div className="">
                     <ul className="flex-1 justify-between pt-2 pb-4 space-y-1 text-sm font-bold">
                         <div className="rounded-sm max">
@@ -113,7 +59,7 @@ export default function Sidebar() {
                                 <span className="text-gray-100">About Me</span>
                             </NavLink>
                         </div>
-                        <li className="rounded-sm">
+                        {/* <li className="rounded-sm">
                             <NavLink
                                     exact={"true"}
                                     onClick={() => setIsOpen(false)}
@@ -135,7 +81,7 @@ export default function Sidebar() {
                                 </svg>
                                 <span className="text-gray-100">Portfolio</span>
                             </NavLink>
-                        </li>
+                        </li> */}
                         <li className="rounded-sm">
                             <NavLink
                                 exact={"true"}
@@ -191,7 +137,7 @@ export default function Sidebar() {
                                     </span>
                             </NavLink>
                         </li>
-                        <li className="rounded-sm">
+                        {/* <li className="rounded-sm">
                             <NavLink
                                     exact={"true"}
                                     onClick={() => setIsOpen(false)}
@@ -215,7 +161,7 @@ export default function Sidebar() {
                                     Settings
                                 </span>
                             </NavLink>
-                        </li>
+                        </li> */}
                     </ul>
                     <NavLink
                         exact={"true"}
