@@ -1,5 +1,8 @@
 import { NavLink } from "react-router-dom";
+import { BsFolderFill, BsGithub } from 'react-icons/bs'
+import { FaShareSquare } from 'react-icons/fa'
 import MyImage from "../assets/MyImage-wide.jpg"
+import './css/style.css'
 
 export default function AboutMe() {
     return (
@@ -17,7 +20,7 @@ export default function AboutMe() {
                         <NavLink
                             exact={"true"}
                             to="/portfolio">
-                            <button className="bg-fe bg-blue-500 hover:bg-grey text-white font-bold py-2 px-4 rounded inline-flex items-center space-x-1">
+                            <button className="bg-fe bg-blue-500 hover:bg-grey text-white font-bold py-2 px-4 mb-2 rounded inline-flex items-center space-x-1">
                             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
                                 <span>View Portfolio</span>
                             </button>
@@ -139,90 +142,112 @@ export default function AboutMe() {
                 <div className="space-y-3">
                     <h2 className="font-bold text-3xl text-white">Featured Projects</h2>
                 </div>
-                <div className="grid grid-cols-1 gap-6 gap-y-10 mb-6 lg:grid-cols-2 w-full">
-                    <div className="flex md:justify-evenly bg-slate-800 rounded-2xl">
-                        <div>
-                            <img className="h-full max-w-[200px] rounded-l-2xl" src={MyImage} alt=""/>
-                        </div>
-                        <div className=" py-4 px-3 md:px-8 space-y-1 text-white">
-                            <h5 className="font-bold underline text-xl">
+                <div className="grid grid-cols-1 gap-6 gap-y-10 mb-6 lg:grid-cols-3 w-full">
+                    <a 
+                        href="https://ms-store-sigma.vercel.app/" 
+                        target={'_blank'} 
+                        rel={'noreferrer'} 
+                        >
+                        <div className="flex flex-col min-h-[282px] p-5 bg-slate-800 rounded-2xl">
+                            <div className="flex py-2 justify-between">
+                                <BsFolderFill size={30} />
+                                <div className="flex space-x-3">
                                 <a 
-                                    href="https://github.com/MugiranezaJ/ms-store" 
+                                    href="https://github.com/MugiranezaJ/ms-store"
                                     target={'_blank'} 
                                     rel={'noreferrer'} 
-                                    alt="">
-                                        Microsoft store - Re-implementation
+                                    className="hover:text-blue-400">
+                                    <BsGithub size={25} />
                                 </a>
-                            </h5>
-                            <p className="text-sm line-clamp-4">
-                                [<a href={"https://ms-store-sigma.vercel.app/"} className=" text-blue-400">visit</a>] 
-                                This is the front end re-implemetation of microsoft store 
-                                desktop app in a web version using react.
-                            </p>
-                            <p className=" py-4 text-gray-400">
-                                <small>
-                                    Client: <a href="https://github.com/MugiranezaJ/ms-store" target={'_blank'} rel={'noreferrer'}  className=" underline">Open Source</a>
-                                </small>
-                            </p>
+                                <FaShareSquare size={25} />
+                                </div>
+                            </div>
+                            <div className="flex-1 mb-3 text-slate-300">
+                                <h4 className="font-bold text-xl line-clamp-2">Microsoft store - Re-implementation</h4>
+                                <p className="line-clamp-3">
+                                    This is the front end re-implemetation of microsoft store 
+                                    desktop app in a web version using react.
+                                </p>
+                                <p className=" py-1 text-gray-400">
+                                    Client: Open source
+                                </p>
+                            </div>
+                            <div className="flex flex-wrap items-center">
+                                <span className="mr-3">ReactJs</span>
+                                <span className="mr-3">NodeJS</span>
+                                <span className="mr-3">Tailwind CSS</span>
+                            </div>
                         </div>
-                    </div>
-                    <div className="flex md:justify-evenly bg-slate-800 rounded-2xl">
-                        <div>
-                            <img className="h-full max-w-[200px] rounded-l-2xl" src={MyImage} alt=""/>
+                    </a>
+
+                    <a 
+                        href="https://igare.rw/" 
+                        target={'_blank'} 
+                        rel={'noreferrer'} 
+                        >
+                        <div className="flex flex-col min-h-[282px] p-5 bg-slate-800 rounded-2xl">
+                            <div className="flex py-2 justify-between">
+                                <BsFolderFill size={30} />
+                                <div className="flex space-x-3">
+                                <FaShareSquare size={25} />
+                                </div>
+                            </div>
+                            <div className="flex-1 mb-3 text-slate-300">
+                                <h4 className="font-bold text-xl line-clamp-2">Igare.rw</h4>
+                                <p className="line-clamp-3">
+                                    By proving legal ownership documents, this website aims at regulating the 
+                                    buying and selling of bicycles all over the 
+                                    country of Rwanda in a secure way.
+                                </p>
+                                <p className=" py-1 text-gray-400">
+                                    Client: BSSC Ltd.
+                                </p>
+                            </div>
+                            <div className="flex flex-wrap w-full">
+                                <span className="mr-3">PHP</span>
+                                <span className="mr-3">JavaScript</span>
+                                <span className="mr-3">Ajax</span>
+                                <span className="mr-3">HTML</span>
+                                <span className="mr-3">CSS</span>
+                                <span className="mr-3">MySQL</span>
+                            </div>
                         </div>
-                        <div className=" py-4 px-3 md:px-8 space-y-1 text-white">
-                            <h5 className="font-bold underline text-xl">
-                                <a href="/#" alt="">Igare.rw</a>
-                            </h5>
-                            <p className="text-sm line-clamp-4">
-                                [<a href={"https://igare.rw/"} className=" text-blue-400">visit</a>]
-                                By proving legal ownership documents, this website aims at regulating the 
-                                buying and selling of bicycles all over the 
-                                country of Rwanda in a secure way.
-                            </p>
-                            <p className=" py-4 text-gray-400">
-                                <small>Client: BSSC Ltd.</small>
-                            </p>
+                    </a>
+                    
+                    <a 
+                        href="https://softlanding.rw/" 
+                        target={'_blank'} 
+                        rel={'noreferrer'} 
+                        >
+                        <div className="flex flex-col min-h-[282px] p-5 bg-slate-800 rounded-2xl">
+                            <div className="flex py-2 justify-between">
+                                <BsFolderFill size={30} />
+                                <div className="flex space-x-3">
+                                <FaShareSquare size={25} />
+                                </div>
+                            </div>
+                            <div className="flex-1 mb-3 text-slate-300">
+                                <h4 className="font-bold text-xl line-clamp-2">Softlanding.rw</h4>
+                                <p className="line-clamp-3">
+                                    Soft Landing Rwanda is a company that 
+                                    facilitates peaple in travelling and relocating  
+                                    in Rwanda and Africa at large. You can see more 
+                                    services through their website
+                                </p>
+                                <p className=" py-1 text-gray-400">
+                                    Client: Soft Landing Rwanda
+                                </p>
+                            </div>
+                            <div className="flex flex-wrap items-center">
+                                <span className="mr-3">PHP</span>
+                                <span className="mr-3">JavaScript</span>
+                                <span className="mr-3">Ajax</span>
+                                <span className="mr-3">HTML</span>
+                                <span className="mr-3">CSS</span>
+                                <span className="mr-3">MySQL</span>
+                            </div>
                         </div>
-                    </div>
-                    <div className="flex md:justify-evenly bg-slate-800 rounded-2xl">
-                        <div>
-                            <img className="h-full max-w-[200px] rounded-l-2xl" src={MyImage} alt=""/>
-                        </div>
-                        <div className=" py-4 px-3 md:px-8 space-y-1 text-white">
-                            <h5 className="font-bold underline text-xl">
-                                <a href="/#" alt="">Softlanding.rw</a>
-                            </h5>
-                            <p className="text-sm line-clamp-4">
-                                [<a href={"https://softlanding.rw/"} className=" text-blue-400">visit</a>]
-                                Soft Landing Rwanda is a company that 
-                                facilitates peaple in travelling and relocating  
-                                in Rwanda and Africa at large. You can see more 
-                                services through their website
-                            </p>
-                            <p className=" py-4 text-gray-400">
-                                <small>Client: Soft Landing Rwanda</small>
-                            </p>
-                        </div>
-                    </div>
-                    <div className="flex md:justify-evenly bg-slate-800 rounded-2xl">
-                        <div>
-                            <img className="h-full max-w-[200px] rounded-l-2xl" src={MyImage} alt=""/>
-                        </div>
-                        <div className=" py-4 px-3 md:px-8 space-y-1 text-white">
-                            <h5 className="font-bold underline text-xl">
-                                <a href="/#" alt="">Project Heading</a>
-                            </h5>
-                            <p className="text-sm line-clamp-4">
-                                Project intro lorem ipsum dolor sit amet, 
-                                consectetuer adipiscing elit. Cum sociis natoque
-                                penatibus et magnis dis parturient montes.
-                            </p>
-                            <p className=" py-4 text-gray-400">
-                                <small>Client: Google</small>
-                            </p>
-                        </div>
-                    </div>
+                    </a>
                 </div>
                 <div className="flex justify-center">
                     <NavLink
