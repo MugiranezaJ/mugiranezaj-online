@@ -1,5 +1,5 @@
 import React from "react";
-import MyImage from "../assets/MyImage-wide.jpg"
+import MyImage from "../../assets/MyImage-wide.jpg"
 
 export const ResumeTemplate = React.forwardRef((props, ref) => {
     return (

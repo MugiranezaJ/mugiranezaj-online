@@ -11,6 +11,7 @@ import {
 import { IoLogoJavascript } from "react-icons/io";
 import { DiPhotoshop, DiCss3, DiHtml5 } from "react-icons/di";
 import { MdWeb, MdDesignServices } from "react-icons/md";
+import { CgArrowRightO } from "react-icons/cg";
 
 const WhatIDo = () => {
   return (
@@ -32,9 +33,9 @@ const WhatIDo = () => {
           <div className="space-y-2">
             <h4 className="font-bold text-2xl">Web Development</h4>
             <p>
-              I have over three years of experience building software for
-              clients and for me. Here are some of the main skills and
-              technologi
+              My web development services include creating responsive and
+              dynamic websites that are optimized for speed and performance,
+              with clean and modular code that is easy to maintain and scale.
             </p>
           </div>
           <div className="flex items-center flex-wrap space-x-1">
@@ -56,9 +57,9 @@ const WhatIDo = () => {
           <div className="space-y-2">
             <h4 className="font-bold text-2xl">Mobile Development</h4>
             <p>
-              I have over three years of experience building software for
-              clients and for me. Here are some of the main skills and
-              technologi
+              I aim at creating mobile applications that are fast, intuitive,
+              and user-friendly, while also being visually appealing and
+              engaging.
             </p>
           </div>
           <div className="flex items-center flex-wrap space-x-1">
@@ -75,9 +76,8 @@ const WhatIDo = () => {
           <div className="space-y-2">
             <h4 className="font-bold text-2xl">UI/UX</h4>
             <p>
-              I have over three years of experience building software for
-              clients and for me. Here are some of the main skills and
-              technologi
+              Designing user-centered digital experiences that enhance usability
+              and engagement.
             </p>
           </div>
           <div className="flex items-center flex-wrap space-x-1">
@@ -93,21 +93,8 @@ const WhatIDo = () => {
           className="flex items-center p-2 space-x-3 rounded-md"
         >
           <button className="bg-fe bg-blue-500 hover:bg-grey text-white font-bold py-2 px-4 rounded inline-flex items-center space-x-1">
-            <svg
-              className="w-6 h-6"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z"
-              ></path>
-            </svg>
-            <span>View Portfolio</span>
+            <CgArrowRightO size={22} />
+            <span>View Projects</span>
           </button>
         </NavLink>
       </div>

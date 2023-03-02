@@ -1,18 +1,22 @@
+import { projectsData } from "../Data/DataStore";
+import ProjectCard from "./ProjectCard";
+
 export default function Portfolio() {
-    return (
-        <div className="flex">
-            <div className="container mx-auto mt-12 ">
-                <div className="grid grid-cols-1 gap-6 mb-6 lg:grid-cols-3">
-                    <div className="w-full px-4 py-5 bg-white rounded-lg shadow">
-                        <div className="text-sm font-medium text-gray-500 truncate">
-                            Total users
-                        </div>
-                        <div className="mt-1 text-3xl font-semibold text-gray-900">
-                            12,00
-                        </div>
-                    </div>
-                </div>
-            </div>
+  return (
+    <div className="flex-1 lg:max-w-[1320px] md:max-w-[720px] mx-auto">
+      <div className="container mx-auto mt-12 ">
+        <div className="mb-10">
+          <h2 className="font-bold text-3xl text-white">More Projects.</h2>
         </div>
-    );
+        <div className="grid grid-cols-1 gap-6 mb-6 lg:grid-cols-3">
+          {projectsData?.map((project, index) => (
+            <ProjectCard key={index} project={project} />
+          ))}
+        </div>
+        <div className="flex justify-center mt-20">
+            <p>More projects to be added soon... in the meantime , you can check my github</p>
+        </div>
+      </div>
+    </div>
+  );
 }

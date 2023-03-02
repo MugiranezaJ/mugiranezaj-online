@@ -2,11 +2,11 @@ import React from "react";
 
 const BurgerButton = ({ isOpen, setIsOpen}) => {
   
-  const genericHamburgerLine = `h-1 w-6 my-1 rounded-full bg-black transition ease transform duration-300`;
+  const genericHamburgerLine = `h-1 w-6 my-1 rounded-full bg-white transition ease transform duration-300`;
 
   return (
     <button
-      className="flex z-50 flex-col fixed top-3 right-3 h-12 w-12 border-2 border-black rounded justify-center items-center group md:hidden"
+      className="flex z-50 flex-col fixed top-3 right-3 h-12 w-12 border-2 border-white rounded justify-center items-center group md:hidden"
       onClick={() => setIsOpen(!isOpen)}
     >
       <div
