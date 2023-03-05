@@ -15,7 +15,7 @@ export const projectsData = [
     skills: ["PHP", "JavaScript", "Ajax", "HTML", "CSS", "MySQL"],
     client: "BSSC Ltd.",
     previewLink: "https://igare.rw/",
-    githubLink: "anotheronehere",
+    githubLink: "",
   },
   {
     title: "Softlanding.rw",

@@ -14,14 +14,14 @@ const ProjectCard = ({project}) => {
             <div className="flex py-2 justify-between">
               <BsFolderFill size={30} />
               <div className="flex space-x-3">
-                <a
-                  href={project?.githubLink}
+                {project?.githubLink && (<a
+                  href={project.githubLink}
                   target={"_blank"}
                   rel={"noreferrer"}
                   className="hover:text-blue-400"
                 >
                   <BsGithub size={25} />
-                </a>
+                </a>)}
                 <FaShareSquare size={25} />
               </div>
             </div>
